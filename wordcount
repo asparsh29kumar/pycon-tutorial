@@ -16,7 +16,7 @@ def main():
         try:
             chars, words, lines = wordcount_lib.consume(filename)
         except IOError:
-            print 'error - %s does not exist!' % filename, file=sys.stderr
+            print 'error - %s does not exist!' % filename
             continue
 
         # track total
